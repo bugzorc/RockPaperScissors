@@ -1,2 +1,3 @@
-# RockPaperScissors
-An enhanced command-line interface (CLI) implementation of the classic Rock-Paper-Scissors game in C++. User against randomized AI choices &amp; a fun, interactive gameplay experience.
+# Rock Paper Scissors [![RPS](https://static.wikia.nocookie.net/rock-paper-scissors/images/e/e6/Site-logo.png)](https://github.com/bugzorc/RockPaperScissors)
+> CLI based game 
+
