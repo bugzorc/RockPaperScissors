@@ -6,7 +6,6 @@
 ![Static Badge](https://img.shields.io/badge/ROCK%20PAPER%20SCISSORS%20PREVIEW-8a3BE2)
 ![Static Badge](https://img.shields.io/badge/coded_in-C%2B%2B-blue)
 <img src="images/RPSpreview.png" align="right" width="100%"/>
-
-
 ![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/bugzorc?style=for-the-badge&logoColor=blue&labelColor=blue&color=blue)
+***
 
