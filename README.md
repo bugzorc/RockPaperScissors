@@ -3,3 +3,5 @@
 > <img src="rps.png" align="right" width="100" height="100"/>
 >> **Objective:** To continuously enhance the flexibility and adaptability of the code, ensuring it evolves with my ongoing learning and development of new programming techniques.
 ***
+![Static Badge](https://img.shields.io/badge/coded_in-C%2B%2B-blue)
+
