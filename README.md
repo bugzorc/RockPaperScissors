@@ -4,4 +4,5 @@
 >> **Objective:** To continuously enhance the flexibility and adaptability of the code, ensuring it evolves with my ongoing learning and development of new programming techniques.
 ***
 ![Static Badge](https://img.shields.io/badge/coded_in-C%2B%2B-blue)
+![Static Badge](https://img.shields.io/badge/ROCK%20PAPER%20SCISSORS%20GOOO!!!-8a3BE2)
 
