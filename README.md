@@ -14,5 +14,5 @@
 >> reason: why you shouldn't use std::endl
 - [ ] convert  userChoice to upperCase 
 >> in order to simplify the if condition by reducing redundancy
-- [ ] use *<random>* utilities rather than *rand()*
+- [ ] use *random* utilities rather than *rand()*
 - [ ] code diveded into more functions to organize it better and make it readable
