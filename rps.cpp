@@ -15,7 +15,7 @@ int main() {
     __^      __(  \.__) ) 
 (@)<_____>__(_____)____/UwU UwU UwU
 -----------------------------------
------------------------------------)" << std::endl;
+-----------------------------------)" << "\n";
 
 	// Prompt user to enter an odd number of turns
 	std::cout << "Choose ODD times to play: ";
@@ -42,7 +42,7 @@ int main() {
 ------------------------------------
 !ROCK PAPER SCISSOR GOOOOOOOOOOOOOO!
 Rock = R/r Paper = P/p Scissor = S/s
-------------------------------------)" << std::endl;
+------------------------------------)" << "\n";
 
 	//move to int funct to prevent seeding everytime a func is called
 	srand(static_cast<unsigned int>(time(0)));
@@ -67,20 +67,20 @@ void gameReferee(int turns) {
 				break;
 			}
 			else {
-				std::cout << "Invalid choice. Please try again." << std::endl;
+				std::cout << "Invalid choice. Please try again.\n";
 			}
 		} while (true);
 
 		char AIchoice = gameAI();
 		switch (AIchoice) {
 		case 'r':
-			std::cout << "AI choose::::: [ROCK]" << std::endl;
+			std::cout << "AI choose::::: [ROCK]\n";
 			break;
 		case 'p':
-			std::cout << "AI choose::::: [PAPER]" << std::endl;
+			std::cout << "AI choose::::: [PAPER]\n";
 			break;
 		case 's':
-			std::cout << "AI choose::::: [SCISSORS]" << std::endl;
+			std::cout << "AI choose::::: [SCISSORS]\n";
 			break;
 		}
 
@@ -92,7 +92,7 @@ void gameReferee(int turns) {
 			std::cout << R"(
 ------------------------------------
 YOOUUUUU WINNNNNN THIS ROOUUNNNNDDDD
-------------------------------------)" << std::endl;
+------------------------------------)" << "\n";
 			userWins++;
 		}
 		//if the ai wins
@@ -102,14 +102,14 @@ YOOUUUUU WINNNNNN THIS ROOUUNNNNDDDD
 			std::cout << R"(
 ------------------------------------
 AI WWWIINNNSS THIS ROUND SORRY HUMAN
-------------------------------------)" << std::endl;
+------------------------------------)" << "\n";
 			aiWins++;
 		}
 		else {
 			std::cout << R"(
 ------------------------------------
 A TTIIIIIIIEEEE IT IS, NO WINNNERRRR
-------------------------------------)" << std::endl;
+------------------------------------)" << "\n";
 			gameTies++;
 		}
 	}
