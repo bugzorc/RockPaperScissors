@@ -11,7 +11,7 @@
 ***
 ## ☑️Task List for version V1.0.4
 - [ ] remove std::endl replace it with \n
->> reason: why you shouldn't use std::endl
+>> reason: [why you shouldn't use std::endl](https://gist.github.com/louis-langholtz/9959fbc735a23b631e7d795d4eb0839f)
 - [ ] convert  userChoice to upperCase 
 >> in order to simplify the if condition by reducing redundancy
 - [ ] use *random* utilities rather than *rand()*
