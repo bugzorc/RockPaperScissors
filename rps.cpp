@@ -3,12 +3,19 @@
 #include <cctype>
 #include <random>
 
+void gameStart();
 void gameReferee(int turns);
-char gameAI();
 char inputToUpper(char userChoice);
+char gameAI();
 
 int main() {
-	int turns;
+	gameStart();
+	
+	return 0;
+}
+
+void gameStart(){
+    int turns;
 
 	// Displaying the welcome message with ASCII art
 	std::cout << R"(
@@ -46,9 +53,7 @@ int main() {
 Rock = R/r Paper = P/p Scissor = S/s
 ------------------------------------)" << "\n";
 
-	gameReferee(turns);
-
-	return 0;
+    gameReferee(turns);
 }
 
 void gameReferee(int turns) {
@@ -138,6 +143,10 @@ SORRRYYY,   AI is the overall winner
 
 }
 
+char inputToUpper(char userChoice){
+    return  toupper(userChoice);
+}
+
 char gameAI() {
 	// Generate a random number between 0 and 2 
 	std::random_device rd;
@@ -162,7 +171,4 @@ char gameAI() {
 
 	return AIchoice;
 }
-
-char inputToUpper(char userChoice){
-    return  toupper(userChoice);
-}
+//uummmm, no more lines, what did you expect :0
