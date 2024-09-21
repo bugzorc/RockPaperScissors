@@ -74,9 +74,7 @@ void gameReferee(int turns) {
 			if (validChoices.find(userChoice) != std::string::npos) {
 				break;
 			}
-			else {
-				std::cout << "Invalid choice. Please try again.\n";
-			}
+			std::cout << "Invalid choice. Please try again.\n";
 		} while (true);
 
 		char AIchoice = gameAI();
@@ -105,7 +103,7 @@ YOOUUUUU WINNNNNN THIS ROOUUNNNNDDDD
 		}
 		//if the ai wins
 		else if (AIchoice == 'r' && userChoice == 'S' ||
-			     AIchoice == 'p' && userChoice == 'R' ||
+			 AIchoice == 'p' && userChoice == 'R' ||
 		    	 AIchoice == 's' &&  userChoice == 'P') {
 			std::cout << R"(
 ------------------------------------
