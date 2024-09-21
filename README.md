@@ -15,4 +15,5 @@
 >- [x] > convert  userChoice to upperCase  [~~9/21/2024 5:56AM UTC+3~~]
 >> in order to simplify the if condition by reducing redundancy
 >- [x] use *random* utilities rather than *rand()* [~~9/21/2024 8:28PM UTC+3~~]
+>> to increase the randomness
 >- [ ] code diveded into more functions to organize it better and make it readable
