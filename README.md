@@ -16,4 +16,4 @@
 >> in order to simplify the if condition by reducing redundancy
 >- [x] use *random* utilities rather than *rand()* [~~9/21/2024 8:28PM UTC+3~~]
 >> to increase the randomness
->- [ ] code diveded into more functions to organize it better and make it readable
+>- [x] code diveded into more functions to organize it better and make it readable [~~9/21/2024 8:37PM UTC+3~~]
