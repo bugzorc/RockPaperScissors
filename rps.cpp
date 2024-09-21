@@ -1,9 +1,11 @@
 #include <iostream>
 #include <cmath>
 #include <limits>
+#include <cctype>
 
 void gameReferee(int turns);
 char gameAI();
+char inputToUpper(char userChoice);
 
 int main() {
 	int turns;
@@ -59,10 +61,13 @@ void gameReferee(int turns) {
 
 	for (int gameOver = 0; gameOver < turns; ++gameOver) {
 		do {
-			std::string validChoices = "RrPpSs";
+			std::string validChoices = "RPS";
 			std::cout << "choose (r/r, p/p, s/s): ";
 			std::cin >> userChoice;
 			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+			
+			userChoice = inputToUpper(userChoice);
+			
 			if (validChoices.find(userChoice) != std::string::npos) {
 				break;
 			}
@@ -86,9 +91,9 @@ void gameReferee(int turns) {
 
 		//Determine the winner
 		//if the user wins
-		if ((userChoice == 'r' || userChoice == 'R') && AIchoice == 's' ||
-			(userChoice == 'p' || userChoice == 'P') && AIchoice == 'r' ||
-			(userChoice == 's' || userChoice == 'S') && AIchoice == 'p') {
+		if (userChoice == 'R' && AIchoice == 's' ||
+		    userChoice == 'P' && AIchoice == 'r' ||
+		    userChoice == 'S' && AIchoice == 'p') {
 			std::cout << R"(
 ------------------------------------
 YOOUUUUU WINNNNNN THIS ROOUUNNNNDDDD
@@ -96,9 +101,9 @@ YOOUUUUU WINNNNNN THIS ROOUUNNNNDDDD
 			userWins++;
 		}
 		//if the ai wins
-		else if (AIchoice == 'r' && (userChoice == 's' || userChoice == 'S') ||
-			AIchoice == 'p' && (userChoice == 'r' || userChoice == 'R') ||
-			AIchoice == 's' && (userChoice == 'p' || userChoice == 'P')) {
+		else if (AIchoice == 'r' && userChoice == 'S' ||
+			     AIchoice == 'p' && userChoice == 'R' ||
+		    	 AIchoice == 's' &&  userChoice == 'P') {
 			std::cout << R"(
 ------------------------------------
 AI WWWIINNNSS THIS ROUND SORRY HUMAN
@@ -118,6 +123,7 @@ A TTIIIIIIIEEEE IT IS, NO WINNNERRRR
 	if (userWins > aiWins) {
 		std::cout << R"(
 ------------------------------------
+ |                                |
  |                                |
 ====================================
 Congrats, you are the overall winner
@@ -153,4 +159,8 @@ char gameAI() {
 	}
 
 	return AIchoice;
+}
+
+char inputToUpper(char userChoice){
+    return  toupper(userChoice);
 }
