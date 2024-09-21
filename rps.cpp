@@ -1,7 +1,7 @@
 #include <iostream>
-#include <cmath>
 #include <limits>
 #include <cctype>
+#include <random>
 
 void gameReferee(int turns);
 char gameAI();
@@ -46,8 +46,6 @@ int main() {
 Rock = R/r Paper = P/p Scissor = S/s
 ------------------------------------)" << "\n";
 
-	//move to int funct to prevent seeding everytime a func is called
-	srand(static_cast<unsigned int>(time(0)));
 	gameReferee(turns);
 
 	return 0;
@@ -142,7 +140,11 @@ SORRRYYY,   AI is the overall winner
 
 char gameAI() {
 	// Generate a random number between 0 and 2 
-	int randomNumber = rand() % 3;
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_int_distribution<> dist(0,2);
+	
+    int	randomNumber= dist(gen);
 
 	char AIchoice;
 
