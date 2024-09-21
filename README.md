@@ -9,7 +9,7 @@
 
 ![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/bugzorc?style=for-the-badge&logoColor=blue&labelColor=blue&color=blue)
 ***
-## ☑️Task List for version V1.0.4
+## ☑️Task List for version V1.4.0
 >- [x] > remove std::endl replace it with \n [~~9/18/2024 2.47AM UTC+3~~]
 >> reason: [why you shouldn't use std::endl](https://gist.github.com/louis-langholtz/9959fbc735a23b631e7d795d4eb0839f)
 >- [x] > convert  userChoice to upperCase  [~~9/21/2024 5:56AM UTC+3~~]
