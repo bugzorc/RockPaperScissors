@@ -16,5 +16,5 @@
 | Convert `userChoice` to uppercase | ✔️ | 9/21/2024 5:56 AM UTC+3 |
 | Use random utilities instead of `rand()` | ✔️ | 9/21/2024 8:28 PM UTC+3 |
 | Code divided into more functions for better organization and readability | ✔️ | 9/21/2024 8:37 PM UTC+3 |
-| Sound Manager | ❌ | |
+| remove redundant else statement | ✔️ | |
 
