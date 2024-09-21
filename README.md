@@ -10,10 +10,10 @@
 ![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/bugzorc?style=for-the-badge&logoColor=blue&labelColor=blue&color=blue)
 ***
 ## ☑️Task List for version V2.3.0
->- [x] > remove std::endl replace it with \n [~~9/18/2024 2.47AM UTC+3~~]
->> reason: [why you shouldn't use std::endl](https://gist.github.com/louis-langholtz/9959fbc735a23b631e7d795d4eb0839f)
->- [x] > convert  userChoice to upperCase  [~~9/21/2024 5:56AM UTC+3~~]
->> in order to simplify the if condition by reducing redundancy
->- [x] use *random* utilities rather than *rand()* [~~9/21/2024 8:28PM UTC+3~~]
->> to increase the randomness
->- [x] code diveded into more functions to organize it better and make it readable [~~9/21/2024 8:37PM UTC+3~~]
+| 🛠️ Feature | Implemented | date
+|---------|-------------|
+| remove std::endl replace it with \n | ✔️ | ~~9/18/2024 2.47AM UTC+3~~ |
+| convert  userChoice to upperCase| ✔️ | ~~9/21/2024 5:56AM UTC+3~~ |
+| use *random* utilities rather than *rand()* | ✔️ | ~~9/21/2024 8:28PM UTC+3~~ |
+| code diveded into more functions to organize it better and make it readable | ✔️ | ~~9/21/2024 8:37PM UTC+3~~ |
+| **Sound Manager** | ❌ | |
