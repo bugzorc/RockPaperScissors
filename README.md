@@ -14,5 +14,5 @@
 >> reason: [why you shouldn't use std::endl](https://gist.github.com/louis-langholtz/9959fbc735a23b631e7d795d4eb0839f)
 >- [x] > convert  userChoice to upperCase  [~~9/21/2024 5:56AM UTC+3~~]
 >> in order to simplify the if condition by reducing redundancy
->- [ ] use *random* utilities rather than *rand()* [~~9/21/2024 8:28PM UTC+3~~]
+>- [x] use *random* utilities rather than *rand()* [~~9/21/2024 8:28PM UTC+3~~]
 >- [ ] code diveded into more functions to organize it better and make it readable
